@@ -11,7 +11,7 @@ use POE::Component::Server::TCP;
 #A correct TCP command will look like
 #$tcp_pass irc.freenode.net&#perl&What up kids!
 
-my $tcp_pass = "simpw";
+my $tcp_pass = "example_pw";
 my $tcp_port = 13337;
 my $mynick = "Masonrey";
 
@@ -213,7 +213,8 @@ sub bot_connect {
 
 POE::Component::Server::TCP->new(
     Alias       => "IRC Relay",
-    Address     => "174.143.158.126", #Bind locally for "security"
+    #Address     => "174.143.158.126", #Bind locally for "security"
+    Address     => localhost, #Bind locally for "security"
     Port        => $tcp_port,
     ClientInput => sub {
         my ( $kernel, $session, $heap, $input, $sender ) =

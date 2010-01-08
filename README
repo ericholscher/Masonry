@@ -7,3 +7,11 @@ Depends on:
     POE::Component::Server::TCP
 
 These can be installed with cpan, or from apt, which is what I've usually done.
+
+apt-get install libpoe-component-irc-perl
+apt-get install libtest-poe-server-tcp-perl
+
+The client depends on Net::Telnet:
+
+apt-get install libnet-telnet-perl
+
