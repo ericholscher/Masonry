@@ -1,0 +1,9 @@
+A very basic IRC bot written in Perl.
+
+Depends on:
+
+    POE
+    POE::Component::IRC
+    POE::Component::Server::TCP
+
+These can be installed with cpan, or from apt, which is what I've usually done.
