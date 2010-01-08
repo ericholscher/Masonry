@@ -213,7 +213,6 @@ sub bot_connect {
 
 POE::Component::Server::TCP->new(
     Alias       => "IRC Relay",
-    #Address     => "174.143.158.126", #Bind locally for "security"
     Address     => localhost, #Bind locally for "security"
     Port        => $tcp_port,
     ClientInput => sub {
